@@ -45,22 +45,16 @@ a { color: inherit; }
 }
 
 /* ---------- Intro ---------- */
-.avatar {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  object-fit: cover;
+.hero {
   display: block;
-  margin-bottom: 24px;
-}
-.avatar--placeholder {
-  display: grid;
-  place-items: center;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 11;
+  object-fit: cover;
+  object-position: 50% 65%;
+  border-radius: var(--radius);
+  margin-bottom: 32px;
   background: var(--line);
-  color: var(--muted);
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: .04em;
 }
 
 .name {
@@ -122,30 +116,7 @@ a { color: inherit; }
 .newsletter h2 { font: 400 26px/1.1 var(--serif); margin: 0 0 4px; }
 .newsletter p { margin: 0; color: var(--muted); font-size: 15px; }
 
-.nl-form { display: flex; gap: 8px; }
-.nl-form input {
-  flex: 1;
-  min-width: 0;
-  font: inherit;
-  font-size: 15px;
-  padding: 11px 14px;
-  border-radius: 10px;
-  border: 1px solid var(--line);
-  background: var(--bg);
-  color: var(--text);
-}
-.nl-form input:focus { outline: 2px solid var(--text); outline-offset: -1px; }
-.nl-form button {
-  font: 500 15px var(--sans);
-  padding: 11px 18px;
-  border: 0;
-  border-radius: 10px;
-  background: var(--accent);
-  color: var(--bg);
-  cursor: pointer;
-  transition: opacity .2s;
-}
-.nl-form button:hover { opacity: .85; }
+.nl-embed { display: block; width: 100%; max-width: 100%; }
 
 /* ---------- Links ---------- */
 .links { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
@@ -215,10 +186,20 @@ a { color: inherit; }
 
 a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-offset: 3px; border-radius: 6px; }
 
-@media (max-width: 480px) {
-  .page { padding-top: 48px; gap: 48px; }
+@media (max-width: 600px) {
+  .page { padding-top: 0; gap: 48px; }
+  /* Photo runs edge to edge across the top on phones */
+  .hero {
+    width: calc(100% + 40px);
+    max-width: none;
+    margin: 0 -20px 28px;
+    aspect-ratio: 896 / 995;
+    max-height: 78vh;
+    border-radius: 0;
+    -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent);
+            mask-image: linear-gradient(to bottom, #000 82%, transparent);
+  }
   .name { font-size: 38px; }
-  .nl-form { flex-direction: column; }
   .work { gap: 20px 12px; }
 }
 

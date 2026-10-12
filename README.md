@@ -6,9 +6,9 @@ A simple, single-page bio site: intro, social links, newsletter signup, key link
 
 Everything lives in `index.html` and is marked with comments:
 
-- **Intro** – name, tagline, bio, avatar (drop a photo at `assets/avatar.jpg` and swap the placeholder).
+- **Intro** – name, tagline, bio. The photo is `assets/avatar.jpg`: full-bleed across the top on phones, a rounded card on larger screens. Adjust the crop with `object-position` on `.hero` in `styles.css`.
 - **Socials** – update each `href`; delete icons you don't use.
-- **Newsletter** – set the form `action` to your provider (Substack, ConvertKit, Beehiiv, Buttondown…), or replace it with a single link.
+- **Newsletter** – the heading and blurb are plain HTML you can edit; the signup field below them is the Beehiiv embed (`<iframe class="nl-embed">`).
 - **Links** – one `<li>` per link; the small text on the right is the destination label.
 - **Selected work** – replace each `.work-media` div with `<img src="assets/work-1.jpg" alt="…" loading="lazy" />`. Images are cropped to 4:5.
 
