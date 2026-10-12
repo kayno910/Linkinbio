@@ -113,10 +113,52 @@ a { color: inherit; }
   display: grid;
   gap: 16px;
 }
+.nl-head { display: flex; gap: 16px; align-items: flex-start; }
+.nl-logo {
+  flex: none;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  background: #161616;
+  padding: 6px;
+  object-fit: contain;
+}
 .newsletter h2 { font: 400 26px/1.1 var(--serif); margin: 0 0 4px; }
 .newsletter p { margin: 0; color: var(--muted); font-size: 15px; }
 
 .nl-embed { display: block; width: 100%; max-width: 100%; }
+
+/* ---------- 1-on-1 ---------- */
+.book-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  padding: 24px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+.book-card h3 { font: 400 26px/1.1 var(--serif); margin: 0 0 4px; }
+.book-card p { margin: 0; color: var(--muted); font-size: 15px; }
+.book-card .book-meta { margin-top: 12px; font-size: 13px; color: var(--text); }
+.btn {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 18px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--bg);
+  font: 500 15px var(--sans);
+  text-decoration: none;
+  transition: opacity .2s;
+}
+.btn:hover { opacity: .85; }
+.btn span { transition: transform .25s ease; }
+.btn:hover span { transform: translateX(3px); }
 
 /* ---------- Links ---------- */
 .links { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
@@ -200,6 +242,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
             mask-image: linear-gradient(to bottom, #000 82%, transparent);
   }
   .name { font-size: 38px; }
+  .book-card { flex-direction: column; align-items: stretch; }
+  .nl-logo { width: 56px; height: 56px; }
   .work { gap: 20px 12px; }
 }
 
