@@ -68,7 +68,24 @@ a { color: inherit; }
 }
 .tagline em { font-family: var(--serif); font-size: 1.15em; color: var(--text); }
 
-.bio { margin: 0 0 24px; max-width: 52ch; }
+.bio { margin: 0 0 24px; max-width: 58ch; }
+.bio p { margin: 0 0 14px; }
+.bio p:last-child { margin-bottom: 0; }
+
+.stats {
+  list-style: none;
+  margin: 0 0 24px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  justify-content: space-between;
+  gap: 12px;
+}
+.stats li { display: flex; flex-direction: column; line-height: 1.3; }
+.stats strong { font: 400 22px/1.15 var(--serif); }
+.stats span { font-size: 13px; color: var(--muted); }
 .bio a {
   text-decoration: underline;
   text-decoration-color: var(--line);
@@ -243,6 +260,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
   }
   .name { font-size: 38px; }
   .book-card { flex-direction: column; align-items: stretch; }
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stats li:last-child { grid-column: 1 / -1; }
   .nl-logo { width: 56px; height: 56px; }
   .work { gap: 20px 12px; }
 }
