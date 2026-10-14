@@ -1,10 +1,10 @@
 :root {
-  --bg: #fbfaf7;
+  --bg: #f1f1f1;
   --surface: #ffffff;
-  --text: #161616;
-  --muted: #6f6c66;
-  --line: #e7e3dc;
-  --accent: #161616;
+  --text: #111111;
+  --muted: #555555;
+  --line: #d4d4d4;
+  --accent: #111111;
   --radius: 14px;
   --serif: "Instrument Serif", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, sans-serif;
@@ -12,12 +12,12 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #111110;
-    --surface: #1a1a18;
-    --text: #f2f0eb;
-    --muted: #9a968e;
-    --line: #2a2926;
-    --accent: #f2f0eb;
+    --bg: #121212;
+    --surface: #1c1c1c;
+    --text: #f1f1f1;
+    --muted: #a8a8a8;
+    --line: #333333;
+    --accent: #f1f1f1;
   }
 }
 
