@@ -49,9 +49,9 @@ a { color: inherit; }
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 16 / 11;
+  aspect-ratio: 5 / 4;
   object-fit: cover;
-  object-position: 50% 65%;
+  object-position: 50% 40%;
   border-radius: var(--radius);
   margin-bottom: 32px;
   background: var(--line);
@@ -288,7 +288,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
     width: calc(100% + 40px);
     max-width: none;
     margin: 0 -20px 28px;
-    aspect-ratio: 896 / 995;
+    aspect-ratio: 896 / 1195;
     max-height: 78vh;
     border-radius: 0;
     -webkit-mask-image: linear-gradient(to bottom, #000 82%, transparent);
