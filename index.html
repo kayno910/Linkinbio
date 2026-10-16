@@ -75,24 +75,25 @@
     </header>
 
     <!-- ============ BRANDS ============ -->
-    <!-- Add or remove <li> items in the FIRST list only; the second list is a copy that makes the loop seamless,
-         so keep it identical. To use a logo image instead of a name:
-         <li><img src="assets/logos/brand.svg" alt="Brand name" /></li>  (SVG or transparent PNG works best) -->
+    <!-- Logos are one-colour PNGs in assets/logos (transparent background, the shape is used as a mask so the
+         colour follows the page theme). Keep both lists identical: the second copy makes the loop seamless. -->
     <section class="brands" aria-labelledby="brands-title">
       <h2 class="section-label" id="brands-title">Selected brands</h2>
       <div class="marquee">
         <div class="marquee-track">
           <ul class="marquee-list">
-            <li><span class="logo-word">OnLogic</span></li>
-            <li><span class="logo-word">TIAA Bank</span></li>
-            <li><span class="logo-word">Pacific Digital</span></li>
-            <li><span class="logo-word">Sage Island Digital</span></li>
+            <li><span class="logo" role="img" aria-label="NY NOW" style="--logo: url(assets/logos/nynow.png); width: 107px; height: 31px"></span></li>
+            <li><span class="logo" role="img" aria-label="OnLogic" style="--logo: url(assets/logos/onlogic.png); width: 113px; height: 29px"></span></li>
+            <li><span class="logo" role="img" aria-label="Amazon Photos" style="--logo: url(assets/logos/amazon-photos.png); width: 74px; height: 40px"></span></li>
+            <li><span class="logo" role="img" aria-label="Robern" style="--logo: url(assets/logos/robern.png); width: 88px; height: 37px"></span></li>
+            <li><span class="logo" role="img" aria-label="Delta Dental" style="--logo: url(assets/logos/delta-dental.png); width: 172px; height: 19px"></span></li>
           </ul>
           <ul class="marquee-list" aria-hidden="true">
-            <li><span class="logo-word">OnLogic</span></li>
-            <li><span class="logo-word">TIAA Bank</span></li>
-            <li><span class="logo-word">Pacific Digital</span></li>
-            <li><span class="logo-word">Sage Island Digital</span></li>
+            <li><span class="logo" role="img" aria-label="NY NOW" style="--logo: url(assets/logos/nynow.png); width: 107px; height: 31px"></span></li>
+            <li><span class="logo" role="img" aria-label="OnLogic" style="--logo: url(assets/logos/onlogic.png); width: 113px; height: 29px"></span></li>
+            <li><span class="logo" role="img" aria-label="Amazon Photos" style="--logo: url(assets/logos/amazon-photos.png); width: 74px; height: 40px"></span></li>
+            <li><span class="logo" role="img" aria-label="Robern" style="--logo: url(assets/logos/robern.png); width: 88px; height: 37px"></span></li>
+            <li><span class="logo" role="img" aria-label="Delta Dental" style="--logo: url(assets/logos/delta-dental.png); width: 172px; height: 19px"></span></li>
           </ul>
         </div>
       </div>
