@@ -130,7 +130,7 @@ a { color: inherit; }
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 50s linear infinite;
 }
 .marquee:hover .marquee-track { animation-play-state: paused; }
 .marquee-list {
@@ -142,7 +142,7 @@ a { color: inherit; }
   gap: 56px;
   padding-right: 56px;
 }
-.marquee-list li { flex: none; display: flex; align-items: center; height: 48px; }
+.marquee-list li { flex: none; display: flex; align-items: center; height: 56px; }
 .logo {
   display: block;
   max-width: none;
