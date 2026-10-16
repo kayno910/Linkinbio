@@ -132,7 +132,8 @@ a { color: inherit; }
   width: max-content;
   animation: marquee 50s linear infinite;
 }
-.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee:hover .marquee-track,
+.marquee:active .marquee-track { animation-play-state: paused; }
 .marquee-list {
   list-style: none;
   margin: 0;
@@ -303,9 +304,6 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--text); outline-
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
-  /* Show the brands as a static, wrapping row instead of scrolling */
-  .marquee { -webkit-mask-image: none; mask-image: none; }
-  .marquee-track { animation: none; width: auto; }
-  .marquee-list { flex-wrap: wrap; gap: 12px 32px; padding-right: 0; }
-  .marquee-list[aria-hidden="true"] { display: none; }
+  /* Brands stay in one looping row, just slower */
+  .marquee-track { animation-duration: 120s; }
 }
