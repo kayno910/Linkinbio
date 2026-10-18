@@ -122,7 +122,6 @@ a { color: inherit; }
 }
 
 /* ---------- Brands marquee ---------- */
-.intro .brands { margin: 6px 0 28px; }
 .marquee {
   overflow: hidden;
   -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent);
