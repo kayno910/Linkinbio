@@ -8,6 +8,7 @@
   --radius: 14px;
   --serif: "Instrument Serif", Georgia, serif;
   --sans: "Inter", system-ui, -apple-system, sans-serif;
+  --display: "Bricolage Grotesque", "Inter", system-ui, sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -58,8 +59,8 @@ a { color: inherit; }
 }
 
 .name {
-  font: 400 44px/1.05 var(--serif);
-  letter-spacing: -.01em;
+  font: 800 46px/1.05 var(--display);
+  letter-spacing: -.03em;
   margin: 0 0 6px;
 }
 .tagline {
